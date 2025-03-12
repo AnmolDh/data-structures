@@ -22,4 +22,9 @@ public class TaskListNode {
         this.task = task;
         this.next = null;
     }
+
+    @Override
+    public String toString() {
+        return "Task Name: " + task.getTaskName() + ", Priority: " + task.getPriority() + ", Task ID: " + task.getTaskId();
+    }
 }
